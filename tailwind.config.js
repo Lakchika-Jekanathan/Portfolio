@@ -1,18 +1,46 @@
+const { Layout } = require('lucide-react')
+
 /** @type {import('tailwindcss').Config} */
+
+
 module.exports = {
+  darkMode: ["class"],
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,jsx}',
+    './components/**/*.{js,jsx}',
+    './app/**/*.{js,jsx}',
+    './src/**/*.{js,jsx}',
   ],
+  prefix: "",
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+    container: {
+      center: true,
+      padding: "15px",
+    },
+
+    screens: {
+      sm:"650px",
+      md:"760px",
+      lg:"970px",
+      sm:"1200px",
       },
+
+      fontFamily:{
+        primary:"var(--font-jetbrainsmono)",
+
+      },
+
+    extend: {
+      colors: {
+        primary: '#000026',
+        accent: {
+          DEFAULT: '#008b8b',
+          
+          hover: '#00ffff',
+        }
+      },
+
     },
   },
-  plugins: [],
-};
+  plugins: [require("tailwindcss-animate")],
+}
