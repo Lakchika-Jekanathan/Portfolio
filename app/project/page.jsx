@@ -8,45 +8,77 @@ import { motion } from "framer-motion";
 const projectServices = [
     {
         num: '01',
-        title: 'Website Development',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
-        href: '/website-development',
-        image: '/assets/photo1.jpg' // Replace with your image URL
+        title: 'HighWay Hub - Mobile App | Group',
+        language: 'ReactNative | NodeJS | Firebase | MongoDB',
+        description: 'Developed a Highway Hub app with AI chatbot, QR ticketing, vehicle registration, and journey tracking.',
+        href: 'https://github.com/CapstoneProject-group9/Project_related_documents',
+        image: '/assets/photo1.jpg',
+       
+
     },
     {
         num: '02',
-        title: 'UI/UX Design',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
+        title: 'Link Plus App - Group',
+        language:'PHP | MySQL',
+        description: 'Developed the Link Plus app, a LinkedIn-like platform with job postings, applications, and messaging, using PHP and MySQL.',
         href: '/ui-ux-design',
-        image: '/assets/photo1.jpg' // Replace with your image URL
+        image: '/assets/photo1.jpg' 
     },
     {
         num: '03',
-        title: 'Application Development',
+        title: 'FrumosEase - Group',
+        language:'MongoDB | ExpressJS | ReactJS |  NodeJS',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
         href: '/application-development',
-        image: '/assets/photo1.jpg' // Replace with your image URL
+        image: '/assets/photo1.jpg' 
     },
     {
         num: '04',
-        title: 'Web Development',
+        title: 'ChatBot - Individual',
+        language:'python',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
         href: '/web-development',
-        image: '/assets/photo1.jpg' // Replace with your image URL
+        image: '/assets/photo1.jpg' 
     },
     {
         num: '05',
-        title: 'Web Development',
+        title: 'Nike Website - Individual',
+        language:'HTML | CSS',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
         href: '/web-development',
-        image: '/assets/photo1.jpg' // Replace with your image URL
+        image: '/assets/photo1.jpg' 
     },
     {
         num: '06',
-        title: 'Web Development',
+        title: 'Chat App - Individual',
+        language:'ReactJS | Firebase',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
         href: '/web-development',
-        image: '/assets/photo1.jpg' // Replace with your image URL
+        image: '/assets/photo1.jpg' 
+    },
+    {
+        num: '07',
+        title: 'Telegram App Redesign - UI/UX | Individual',
+        language:'Figma',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
+        href: '/web-development',
+        image: '/assets/photo1.jpg' 
+    },
+    {
+        num: '08',
+        title: 'Library Management System - Testing | Group',
+        language:'PHP | Php unit',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
+        href: '/web-development',
+        image: '/assets/photo1.jpg' 
+    },
+    {
+        num: '09',
+        title: 'Portfolio',
+        language:'Next JS | Tailwind CSS | Framer Motion',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
+        href: '/web-development',
+        image: '/assets/photo1.jpg' 
     },
 ];
 
@@ -54,24 +86,26 @@ const projectServices = [
 const gameServices = [
     {
         num: '01',
-        title: 'Action Game',
+        title: 'Snake Game',
+        language:'Python',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
-        href: '/action-game',
-        image: '/assets/photo2.jpg' // Replace with your image URL
+        href: 'https://github.com/Lakchika-Jekanathan/Snake_game',
+        image: '/assets/snake.jpeg' 
     },
     {
         num: '02',
-        title: 'Puzzle Game',
+        title: 'Candy crush',
+        language:'HTML | CSS | JavaScript',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
-        href: '/puzzle-game',
-        image: '/assets/photo2.jpg' // Replace with your image URL
+        href: 'https://github.com/Lakchika-Jekanathan/Candy-crush',
+        image: '/assets/candy.jpeg' 
     },
     {
         num: '03',
-        title: 'Adventure Game',
+        title: 'Tic Tac Toe',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
-        href: '/adventure-game',
-        image: '/assets/photo2.jpg' // Replace with your image URL
+        href: 'https://github.com/Lakchika-Jekanathan/Tic-Tac-Toe',
+        image: '/assets/photo2.jpg' 
     },
 ];
 
@@ -94,7 +128,10 @@ const Services = () => {
                         <FaGithub className="text-primary text-lg" />
                     </Link>
                 </div>
-                <p className="text-white/60 text-sm mb-1">{service.description}</p> {/* Adjusted margin here */}
+                
+                <p className="text-white/60 text-sm mb-1">{service.description}</p>
+                <h4 className="text-accent text-sm mb-1">{service.language}</h4>
+                
                 <div className="border-b border-white/20 w-full"></div>
             </div>
         ));
