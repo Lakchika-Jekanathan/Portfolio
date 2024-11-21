@@ -19,10 +19,10 @@ module.exports = {
     },
 
     screens: {
-      sm:"650px",
-      md:"760px",
-      lg:"970px",
-      sm:"1200px",
+      sm:"640px",
+      md:"768px",
+      lg:"960px",
+      xl:"1200px",
       },
 
       fontFamily:{
@@ -35,6 +35,7 @@ module.exports = {
         primary: '#000026',
         accent: {
           DEFAULT: '#008b8b',
+          nav:'#213A58',
           
           hover: '#00ffff',
         }
@@ -42,5 +43,7 @@ module.exports = {
 
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),
+  ],
+  
 }

@@ -4,53 +4,31 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
-    {
-        name:"Home",
-        path:"/",
-    },
-
-    {
-        name:"Resume",
-        path:"/resume",
-    },
-    {
-        name:"Skills",
-        path:"/skills",
-    },
-
-    {
-        name:"Projects",
-        path:"/project",
-    },
-
-    /*{
-        name:"Services",
-        path:"/service",
-    },*/
-
-    {
-        name:"Contact",
-        path:"/contact",
-    },
-]
-
+  { name: "Home", path: "/" },
+  { name: "Resume", path: "/resume" },
+  { name: "Skills", path: "/skills" },
+  { name: "Projects", path: "/project" },
+  { name: "Contact", path: "/contact" },
+];
 
 const Nav = () => {
-    const pathname = usePathname();
-    console.log(pathname);
+  const pathname = usePathname();
 
-    return( 
-    <nav className="flex gap-8">
-        {links.map((link, index)=> {
-            return <Link href={link.path} key={index} className={`${link.path === pathname && "text-accent "} hover:text-accent`}>
-            {link.name}
-            </Link>
-        })}
+  return (
+    <nav className="flex flex-col lg:flex-row gap-6 lg:gap-8 mb-2">
+      {links.map((link, index) => (
+        <Link
+          href={link.path}
+          key={index}
+          className={`${
+            link.path === pathname ? "text-accent" : "hover:text-accent"
+          }`}
+        >
+          {link.name}
+        </Link>
+      ))}
     </nav>
-    );
+  );
 };
 
-
-
-
-export default Nav
+export default Nav;

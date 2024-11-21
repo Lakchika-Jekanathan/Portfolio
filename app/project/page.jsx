@@ -1,10 +1,11 @@
 "use client";
-import { useState } from "react"; // Import useState for state management
-import { FaGithub } from "react-icons/fa"; // Import GitHub icon
+import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-// Define services for Projects
+
+// Define services for Projects and Games
 const projectServices = [
     {
         num: '01',
@@ -82,7 +83,6 @@ const projectServices = [
     },
 ];
 
-// Define services for Games
 const gameServices = [
     {
         num: '01',
@@ -115,56 +115,65 @@ const Services = () => {
     const renderServices = () => {
         const servicesToDisplay = selectedCategory === "projects" ? projectServices : gameServices;
         return servicesToDisplay.map((service, index) => (
-            <div key={index} className="flex-1 flex flex-col justify-between gap-2 group border border-white rounded-lg p-4 bg-gray-800 transition-transform transform hover:scale-105">
-                <img src={service.image} alt={service.title} className="w-full h-32 object-cover rounded-md mb-2" />
+            <div
+                key={index}
+                className="flex-1 flex flex-col justify-between gap-2 group border border-white rounded-lg p-4 bg-gray-800 transition-transform transform "
+            >
+                <img src={service.image} alt={service.title} className="w-full h-24 object-cover rounded-md mb-2" />
                 <div className="flex items-center justify-between mb-1">
                     <div className="flex items-center gap-2">
                         <div className="text-2xl font-extrabold text-outline group-hover:text-outline-hover transition-all duration-50">
                             {service.num}
                         </div>
-                        <h2 className="text-[18px] font-bold leading-none text-white cursor-pointer group-hover:text-accent transition-all duration-500">{service.title}</h2>
+                        <h2 className="text-[18px] font-bold leading-none text-white cursor-pointer group-hover:text-accent transition-all duration-500">
+                            {service.title}
+                        </h2>
                     </div>
-                    <Link href={service.href} className="w-[36px] h-[36px] rounded-full bg-accent group-hover:bg-accent-hover text-outline group-hover:text-outline-hover cursor-pointer transition-all duration-500 flex justify-center items-center hover:rotate-45">
+                    <Link
+                        href={service.href}
+                        className="w-[36px] h-[36px] rounded-full bg-accent group-hover:bg-accent-hover text-outline group-hover:text-outline-hover cursor-pointer transition-all duration-500 flex justify-center items-center hover:rotate-45"
+                    >
                         <FaGithub className="text-primary text-lg" />
                     </Link>
                 </div>
-                
                 <p className="text-white/60 text-sm mb-1">{service.description}</p>
                 <h4 className="text-accent text-sm mb-1">{service.language}</h4>
-                
                 <div className="border-b border-white/20 w-full"></div>
             </div>
         ));
     };
 
     return (
-        <section className="min-h-[50vh] flex flex-col justify-center py-5 xl:py-0">
+        <section className="h-[100%] flex flex-col justify-center xl:py-0 pt-0">
             <div className="container max-w-screen-xl mx-auto">
                 {/* Button Section */}
-                <div className="flex justify-center space-x-4 mb-5">
+                <div className="flex justify-center  mb-4">
                     <button
                         onClick={() => setSelectedCategory("projects")}
-                        className={`py-2 px-4 rounded-lg ${selectedCategory === "projects" ? "bg-accent text-white" : "bg-gray-700 text-gray-200"} transition`}
+                        className={`py-2 px-8  ${selectedCategory === "projects" ? " border-b-4 border-accent text-white" : "bg-gray-700 text-gray-200"} transition`}
                     >
                         Projects
                     </button>
                     <button
                         onClick={() => setSelectedCategory("games")}
-                        className={`py-2 px-4 rounded-lg ${selectedCategory === "games" ? "bg-accent text-white" : "bg-gray-700 text-gray-200"} transition`}
+                        className={`py-2 px-8  ${selectedCategory === "games" ? "border-b-4 border-accent  text-white" : "bg-gray-700 text-gray-200"} transition`}
                     >
                         Games
                     </button>
                 </div>
-                
+
+                {/* Scrollable Content Section */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{
                         opacity: 1,
                         transition: { delay: 0.4, duration: 0.4, ease: "easeIn" },
                     }}
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]"
+                    className="h-[300px] overflow-y-auto px-2 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-200"
                 >
-                    {renderServices()}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] px-12">
+                        {renderServices()}
+                    </div>
                 </motion.div>
             </div>
         </section>
