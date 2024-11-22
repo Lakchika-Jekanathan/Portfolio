@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <section className="h-[85%] bg-primary overflow-x-hidden">
       <div className="container mx-auto h-[85%]">
-        <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start h-full lg:pt-6 ">
+        <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start h-full">
           {/* Left Section */}
-          <div className="text-center lg:text-left order-2 lg:order-1 flex-1 lg:pr-16">
+          <div className="text-center lg:text-left order-2 lg:order-1 flex-1 lg:pr-16 lg:pt-0">
             <span className="text-lg sm:text-xl block mb-2 text-accent-hover">
               Software Engineer Intern
             </span>
@@ -44,7 +44,7 @@ const Home = () => {
           </div>
 
           {/* Right Section (Photo) */}
-          <div className="order-1 lg:order-2 mb-8 lg:mb-0">
+          <div className="order-1 lg:order-2 mb-8 lg:mb-0 lg:pt-6">
             <Photo />
           </div>
         </div>

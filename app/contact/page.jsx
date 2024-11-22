@@ -24,16 +24,16 @@ const Contact = () => {
     };
 
     return (
-        <div className="h-[75vh] bg-primary/30">
+        <div className="h-[73vh] lg:overflow-hidden bg-primary/30">
             <div className="container mx-auto px-4 flex flex-col items-center">
                 <div className="flex flex-col w-full max-w-[700px] bg-green-500/5 rounded-lg shadow-md">
                     {/* Header */}
-                    <h2 className="text-4xl font-semibold text-center mb-8">
+                    <h2 className="text-3xl font-semibold text-center mb-8">
                         Let's <span className="text-accent">Connect.</span>
                     </h2>
 
                     {/* Form */}
-                    <form ref={formRef} onSubmit={sendEmail} className="flex flex-col gap-3">
+                    <form ref={formRef} onSubmit={sendEmail} className="flex flex-col gap-2">
                         {/* Name & Email */}
                         <div className="flex flex-col sm:flex-row gap-4">
                             <input
@@ -45,7 +45,7 @@ const Contact = () => {
                             <input
                                 type="email"
                                 name="user_email"
-                                placeholder="E-Mail"
+                                placeholder="email"
                                 className="flex-1 border border-gray-300 rounded-lg outline-none focus:border-cyan-500 p-3 bg-transparent"
                             />
                         </div>

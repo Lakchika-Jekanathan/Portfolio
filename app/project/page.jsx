@@ -147,7 +147,7 @@ const Services = () => {
         <section className="h-[100%] flex flex-col justify-center xl:py-0 pt-0">
             <div className="container max-w-screen-xl mx-auto">
                 {/* Button Section */}
-                <div className="flex justify-center  mb-4">
+                <div className="flex justify-center mb-4 ">
                     <button
                         onClick={() => setSelectedCategory("projects")}
                         className={`py-2 px-8  ${selectedCategory === "projects" ? " border-b-4 border-accent text-white" : "bg-gray-700 text-gray-200"} transition`}
@@ -175,6 +175,7 @@ const Services = () => {
                         {renderServices()}
                     </div>
                 </motion.div>
+                
             </div>
         </section>
     );
