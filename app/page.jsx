@@ -11,7 +11,7 @@ const Home = () => {
           {/* Left Section */}
           <div className="text-center lg:text-left order-2 lg:order-1 flex-1 lg:pr-16 lg:pt-0">
             <span className="text-lg sm:text-xl block mb-2 text-accent-hover">
-              Software Engineer Intern
+              Associate Software Engineer
             </span>
             <h1 className="text-3xl lg:text-5xl font-bold mb-6">
               Hello I'm <br />
@@ -28,7 +28,7 @@ const Home = () => {
 
             {/* Buttons and Social Links */}
             <div className="flex flex-col sm:flex-row items-center gap-5 justify-center lg:justify-start">
-              <a href="/Lakchika_Jekanathan_CV.pdf" download>
+              <a href="/Lakchika_Jekanathan.pdf" download target="_blank">
                 <Button className="text-md flex items-center gap-2">
                   <span>Download CV</span>
                   <FiDownload className="text-xl" />

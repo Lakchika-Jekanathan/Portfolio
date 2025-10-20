@@ -7,7 +7,7 @@ import { ScrollArea } from "@/components/UI/scroll-area";
 // Data objects for About, Education, and Experience
 const about = {
     title: "About me",
-    description: "Passionate software developer with a knack for creating innovative solutions. My enthusiasm for tackling new challenges and collaborating with dynamic teams drives me to deliver impactful results.",
+    description: "An aspiring software developer with a strong foundation in building user-centric applications. I thrive on solving complex problems and continuously seek opportunities to grow and contribute to innovative projects.",
     info: [
         { fieldName: "Name", fieldValue: "Lakchika" },
         { fieldName: "Email", fieldValue: "jlaksika2001@gmail.com" },
@@ -21,7 +21,7 @@ const about = {
 const education = {
     title: "My Education",
     description:
-        "Passionate software developer with a knack for creating innovative solutions. My enthusiasm for tackling new challenges and collaborating with dynamic teams drives me to deliver impactful results.",
+        "Pursuing a BSc (Hons) in Computing and Information Systems, with a strong focus on software development, graphic design, and creative problem-solving. Acquiring skills in programming, design principles, and emerging technologies to deliver impactful solutions.",
     items: [
         { institution: "Sabaragamuwa University of sri lanka", degree: "Computing Information Systems", faculty: "Faculty of Computing", duration: "2022 - Present" },
         { institution: "DVTC Mullaitivu", degree: "Graphic designing-NVQ 4", duration: "2021 - [1 year]" },
@@ -37,9 +37,12 @@ const education = {
 const experience = {
     title: "My Experience",
     description:
-        "Passionate software developer with a knack for creating innovative solutions. My enthusiasm for tackling new challenges and collaborating with dynamic teams drives me to deliver impactful results.",
+        "Experienced in customer service, administrative tasks, and operational support, contributing to overall efficiency in daily operations.",
     items: [
         { company: "Samurdhi Bank, Mullaitivu", position: "Trainee Staff", duration: "2021 - [6 Months]" },
+        { company: "Techorin solutions, Colombo", position: "Intern Software Engineer", duration: "2024 Dec - 2025 Oct" },
+
+
     ],
 };
 

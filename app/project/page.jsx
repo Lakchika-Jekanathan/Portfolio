@@ -9,11 +9,11 @@ import { motion } from "framer-motion";
 const projectServices = [
     {
         num: '01',
-        title: 'HighWay Hub - Mobile App | Group',
+        title: 'HighWay Hub - Group Mobile App',
         language: 'ReactNative | NodeJS | Firebase | MongoDB',
         description: 'Developed a Highway Hub app with AI chatbot, QR ticketing, vehicle registration, and journey tracking.',
-        href: 'https://github.com/CapstoneProject-group9/Project_related_documents',
-        image: '/assets/photo1.jpg',
+        href: 'https://github.com/CapstoneProject-group9/HWH_updated.git',
+        image: '/assets/HWH1.png',
        
 
     },
@@ -21,10 +21,11 @@ const projectServices = [
         num: '02',
         title: 'Link Plus App - Group',
         language:'PHP | MySQL',
-        description: 'Developed the Link Plus app, a LinkedIn-like platform with job postings, applications, and messaging, using PHP and MySQL.',
-        href: '/ui-ux-design',
-        image: '/assets/photo1.jpg' 
+        description: 'Developed the Link Plus app, a LinkedIn-like platform with job postings, applications, and messaging, using PHP laraval framework and MySQL.',
+        href: '/https://github.com/PHP-GroupProject/Alumina_Netwok_WebApp',
+        image: '/assets/LinkPlus.jpg' 
     },
+    /*
     {
         num: '03',
         title: 'FrumosEase - Group',
@@ -33,53 +34,47 @@ const projectServices = [
         href: '/application-development',
         image: '/assets/photo1.jpg' 
     },
+    */
     {
-        num: '04',
+        num: '03',
         title: 'ChatBot - Individual',
         language:'python',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
-        href: '/web-development',
-        image: '/assets/photo1.jpg' 
+        description: 'Created a Python-based chatbot leveraging JSON for efficient question-and-answer handling, delivering seamless user interactions.',
+        href: '/https://www.linkedin.com/posts/lakchika-jekanathan_python-ai-chatbot-activity-7235663555428036608-AsDN?utm_source=share&utm_medium=member_desktop',
+        image: '/assets/chat-bot.jpg' 
+    },
+    {
+        num: '04',
+        title: 'Nike Website - Individual',
+        language:'HTML | CSS',
+        description: 'Designed and developed a responsive Nike-themed website using HTML and CSS, focusing on modern design and user experience',
+        href: '/https://github.com/Lakchika-Jekanathan/NIKE-Website',
+        image: '/assets/website.jpg' 
     },
     {
         num: '05',
-        title: 'Nike Website - Individual',
-        language:'HTML | CSS',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
-        href: '/web-development',
-        image: '/assets/photo1.jpg' 
-    },
-    {
-        num: '06',
         title: 'Chat App - Individual',
         language:'ReactJS | Firebase',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
-        href: '/web-development',
-        image: '/assets/photo1.jpg' 
+        description: 'Built a real-time chat application using ReactJS and Firebase, enabling seamless user communication with robust functionality.',
+        href: '/https://github.com/Lakchika-Jekanathan/Chat_App',
+        image: '/assets/chat app.jpg' 
     },
-    {
-        num: '07',
-        title: 'Telegram App Redesign - UI/UX | Individual',
+    /*{
+        num: '06',
+        title: 'Telegram App UI Individual',
         language:'Figma',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
+        description: 'Currently redesigning the Telegram App UI individually in Figma, focusing on modern aesthetics and enhanced user experience.',
         href: '/web-development',
         image: '/assets/photo1.jpg' 
     },
+    */
     {
-        num: '08',
-        title: 'Library Management System - Testing | Group',
+        num: '06',
+        title: 'LMS - Testing | Group',
         language:'PHP | Php unit',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
-        href: '/web-development',
-        image: '/assets/photo1.jpg' 
-    },
-    {
-        num: '09',
-        title: 'Portfolio',
-        language:'Next JS | Tailwind CSS | Framer Motion',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
-        href: '/web-development',
-        image: '/assets/photo1.jpg' 
+        description: 'Conducted testing for a Library Management System developed in PHP, ensuring functionality for book management and user operations.',
+        href: '/https://github.com/Library-Management-Systems/Library_Management.git',
+        image: '/assets/LMS.jpg' 
     },
 ];
 
@@ -88,7 +83,7 @@ const gameServices = [
         num: '01',
         title: 'Snake Game',
         language:'Python',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
+        description: 'Developed a classic Snake Game using Python, featuring smooth gameplay and interactive controls.',
         href: 'https://github.com/Lakchika-Jekanathan/Snake_game',
         image: '/assets/snake.jpeg' 
     },
@@ -96,16 +91,17 @@ const gameServices = [
         num: '02',
         title: 'Candy crush',
         language:'HTML | CSS | JavaScript',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
+        description: 'Created a dynamic Candy Crush game using HTML, CSS, and JavaScript, offering engaging and interactive gameplay.',
         href: 'https://github.com/Lakchika-Jekanathan/Candy-crush',
         image: '/assets/candy.jpeg' 
     },
     {
         num: '03',
         title: 'Tic Tac Toe',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et eligendi.',
+        language:'Java',
+        description: 'Designed and implemented a Tic Tac Toe game in Java, providing a seamless and engaging two-player experience.',
         href: 'https://github.com/Lakchika-Jekanathan/Tic-Tac-Toe',
-        image: '/assets/photo2.jpg' 
+        image: '/assets/tic-tac-toe.jpg' 
     },
 ];
 
